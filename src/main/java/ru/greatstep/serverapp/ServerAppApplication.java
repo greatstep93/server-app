@@ -15,6 +15,7 @@ public class ServerAppApplication {
 
     @GetMapping("/")
     public String test() throws InterruptedException {
+        System.out.println(Thread.currentThread());
         Thread.sleep(3000);
         return "ok";
     }
